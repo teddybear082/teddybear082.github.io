@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WingmanAI - Your Virtual Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <h1>WingmanAI</h1>
+      <nav>
+        <ul>
+          <li><a href="#features" onclick="showFeatures()">Features</a></li>
+          <li><a href="#commands" onclick="showFeatures()">Commands</a></li>
+          <li><a href="#skills" onclick="showFeatures()">Skills</a></li>
+          <li><a href="#contact" onclick="showFeatures()">Contact Us</a></li>
+          <li><a href="#blog" onclick="showBlog()">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h2>More than just voice commands</h2>
+      <p>Bring AI to any game or application.</p>
+      <button onclick="scrollToSection('features')">Learn More</button>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <p>Explore what WingmanAI can do for you.</p>
+    <ul>
+      <li>Roleplaying</li>
+      <li>Commands</li>
+      <li>Skills</li>
+      <li>Fast Response</li>
+      <li>Multilingual</li>
+      <li>Customizable</li>
+    </ul>
+  </section>
+
+  <section id="commands">
+    <h2>Commands</h2>
+    <p>Use our pre-configured commands to trigger hotkeys, complex macros or even mouse input.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>Extend the capabilities of any Wingman by adding easy-to-use skills.</p>
+  </section>
+
+  <section id="blog" style="display:none;">
+    <h2>Blog</h2>
+    <article id="article1" onclick="expandArticle('article1')">
+      <h3>Roleplaying with WingmanAI</h3>
+      <div class="article-content" style="display:none;">
+        <p>Clippy explores the diverse roleplaying features offered by WingmanAI, allowing users to create immersive characters. WingmanAI provides various customizable elements to truly bring the characters to life in any game or application scenario.</p>
+      </div>
+    </article>
+    <article id="article2" onclick="expandArticle('article2')">
+      <h3>Mastering Commands</h3>
+      <div class="article-content" style="display:none;">
+        <p>Learn how WingmanAI's command functionality can simplify complex tasks with just voice commands. With a range of pre-configured and customizable commands, you can efficiently manage tasks and focus more on the gameplay or work at hand.</p>
+      </div>
+    </article>
+    <article id="article3" onclick="expandArticle('article3')">
+      <h3>Enhancing Skills</h3>
+      <div class="article-content" style="display:none;">
+        <p>Discover the variety of skills that can be added to WingmanAI to extend its capabilities beyond imagination. From controlling apps to using AI Vision, WingmanAI opens up a world of possibilities for users and developers alike.</p>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 WingmanAI | <a href="#contact">Contact Us</a></p>
+    <div class="social-media">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
