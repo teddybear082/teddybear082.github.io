@@ -1,89 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WingmanAI - Your Virtual Assistant</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clippy's Corner</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { text-align: center; background-color: #4CAF50; color: white; padding: 1em 0; font-size: 2.5em; }
+        nav { margin: 1em; text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: #4CAF50; font-size: 1.2em; }
+        .news { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 2em; }
+        .article { border: 1px solid #ddd; padding: 1em; margin: 1em; width: 45%; cursor: pointer; }
+        .article:hover { background-color: #f9f9f9; }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="branding">
-      <h1>WingmanAI</h1>
-      <nav>
-        <ul>
-          <li><a href="#features" onclick="showFeatures()">Features</a></li>
-          <li><a href="#commands" onclick="showFeatures()">Commands</a></li>
-          <li><a href="#skills" onclick="showFeatures()">Skills</a></li>
-          <li><a href="#contact" onclick="showFeatures()">Contact Us</a></li>
-          <li><a href="#blog" onclick="showBlog()">Blog</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section id="hero">
-    <div class="hero-content">
-      <h2>More than just voice commands</h2>
-      <p>Bring AI to any game or application.</p>
-      <button onclick="scrollToSection('features')">Learn More</button>
-    </div>
-  </section>
-
-  <section id="features">
-    <h2>Features</h2>
-    <p>Explore what WingmanAI can do for you.</p>
-    <ul>
-      <li>Roleplaying</li>
-      <li>Commands</li>
-      <li>Skills</li>
-      <li>Fast Response</li>
-      <li>Multilingual</li>
-      <li>Customizable</li>
-    </ul>
-  </section>
-
-  <section id="commands">
-    <h2>Commands</h2>
-    <p>Use our pre-configured commands to trigger hotkeys, complex macros or even mouse input.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <p>Extend the capabilities of any Wingman by adding easy-to-use skills.</p>
-  </section>
-
-  <section id="blog" style="display:none;">
-    <h2>Blog</h2>
-    <article id="article1" onclick="expandArticle('article1')">
-      <h3>Roleplaying with WingmanAI</h3>
-      <div class="article-content" style="display:none;">
-        <p>Clippy explores the diverse roleplaying features offered by WingmanAI, allowing users to create immersive characters. WingmanAI provides various customizable elements to truly bring the characters to life in any game or application scenario.</p>
-      </div>
-    </article>
-    <article id="article2" onclick="expandArticle('article2')">
-      <h3>Mastering Commands</h3>
-      <div class="article-content" style="display:none;">
-        <p>Learn how WingmanAI's command functionality can simplify complex tasks with just voice commands. With a range of pre-configured and customizable commands, you can efficiently manage tasks and focus more on the gameplay or work at hand.</p>
-      </div>
-    </article>
-    <article id="article3" onclick="expandArticle('article3')">
-      <h3>Enhancing Skills</h3>
-      <div class="article-content" style="display:none;">
-        <p>Discover the variety of skills that can be added to WingmanAI to extend its capabilities beyond imagination. From controlling apps to using AI Vision, WingmanAI opens up a world of possibilities for users and developers alike.</p>
-      </div>
-    </article>
-  </section>
-
-  <footer>
-    <p>&copy; 2023 WingmanAI | <a href="#contact">Contact Us</a></p>
-    <div class="social-media">
-      <a href="#">Facebook</a>
-      <a href="#">Twitter</a>
-      <a href="#">LinkedIn</a>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <header>Clippy's Corner</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </nav>
+    <section class="news">
+        <div class="article" onclick="window.location='article1.html'">
+            <h2>Man Stabbed Near Popular Church</h2>
+            <p>Atlanta police are investigating a bizarre stabbing incident involving a ghostly figure...</p>
+        </div>
+        <div class="article" onclick="window.location='article2.html'">
+            <h2>Chevy Novas on Display</h2>
+            <p>A secret society of Chevy Nova enthusiasts is under investigation...</p>
+        </div>
+        <div class="article" onclick="window.location='article3.html'">
+            <h2>Popular Programming Languages</h2>
+            <p>Experts warn that the rise of a mysterious new programming language might be...</p>
+        </div>
+        <div class="article" onclick="window.location='article4.html'">
+            <h2>IT Leaders Losing Faith</h2>
+            <p>Recent studies show that IT leaders are turning to fortune tellers for guidance...</p>
+        </div>
+    </section>
 </body>
 </html>
