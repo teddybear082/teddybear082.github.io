@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Clippy</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .gallery-container h2 {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .direction {
+            font-size: 1.5em;
+            cursor: pointer;
+            user-select: none;
+            color: #4CAF50;
+            z-index: 10;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .direction:hover {
+            text-decoration: underline;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .gallery img {
+            width: 25%;
+            height: auto;
+            margin: 0 10px;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .caption {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <header>About Clippy</header>
@@ -13,9 +56,23 @@
         <a href="about.html" style="color: #fff;">About</a>
     </nav>
     <section>
-        <img src="about_image.jpg" alt="Image of Clippy">
+        <img src="about_image.webp" alt="Image of Clippy" style="width: 50%;">
         <h2>Who is Clippy?</h2>
         <p>Clippy is your friendly, helpful assistant, turning the mundane into the extraordinary with a twist of satire and fun! Enjoy the laughs at Clippy's Corner!</p>
     </section>
+    <div class="gallery-container">
+        <h2>Clippy's Adventures Photo Gallery</h2>
+        <div>
+            <span class="direction" onclick="prevSlide()">Previous</span>
+            <span class="direction" onclick="nextSlide()">Next</span>
+        </div>
+        <div class="gallery" id="gallery">
+            <!-- Images will be inserted here by JavaScript -->
+        </div>
+        <div class="caption" id="caption">
+            <!-- Caption will be inserted by JavaScript -->
+        </div>
+    </div>
+    <script src="gallery.js"></script>
 </body>
 </html>

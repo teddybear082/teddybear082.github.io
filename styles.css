@@ -68,3 +68,18 @@ footer {
     max-height: 200px; /* Adjust the max height as needed */
     margin-bottom: 20px;
 }
+
+/* Gallery Directions */
+.direction {
+    font-size: 1.5em;
+    cursor: pointer;
+    user-select: none;
+    color: #4CAF50;
+    z-index: 10;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.direction:hover {
+    text-decoration: underline;
+}
