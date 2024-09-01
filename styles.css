@@ -53,3 +53,10 @@ footer {
     padding: 10px 0;
     text-align: center;
 }
+
+/* Thumbnail Images */
+.thumbnail {
+    width: 100px; /* Adjust the width as necessary */
+    height: auto;
+    margin: 10px;
+}
